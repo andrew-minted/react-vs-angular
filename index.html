@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Todo List</title>
-</head>
-<body>
-  <div class="app">
-    
-  </div>
-
-  <!-- Data common to both versions -->
-  <script>
-  var todos = [
-    { id: 1,
-      text: "Create a React todo list",
-      complete: false
-    },
-    { id: 2,
-      text: "Create an Angular todo list",
-      complete: false
-    },
-    { id: 3,
-      text: "Show Daniel how unit testing works",
-      complete: false
-    }
-  ];
-  </script>
-
-</body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>React-Flux Todos</title>
+	</head>
+	<body>
+    <script>
+      window.todos = [
+         { 
+           text: "Create a React todo list",
+           complete: false
+         },
+         { 
+           text: "Create an Angular todo list",
+           complete: false
+         },
+         { 
+           text: "Show Daniel how unit testing works",
+           complete: false
+         }
+      ];
+    </script>
+    <section id="todo-app"></section>
+    <script src="js/bundle.js"></script>
+  </body>
 </html>
