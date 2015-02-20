@@ -1,0 +1,1 @@
+This is a comparison of a simple todo list using React and Angular. Specifically, unit testing a React component vs unit testing an Angular directive.
