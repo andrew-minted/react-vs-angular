@@ -1,0 +1,15 @@
+{
+  "name": "todo-react-vs-angular",
+  "version": "1.0.0",
+  "description": "This is a comparison of a simple todo list using React and Angular. Specifically, unit testing a React component vs unit testing an Angular directive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github_minted:andrew-minted/todo-react-vs-angular.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

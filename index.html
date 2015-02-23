@@ -4,27 +4,29 @@
   <title>Todo List</title>
 </head>
 <body>
-  <div class="app">
-    
+  <div class="app" ng-app="todoApp">
+    <h2>To-Do List in Angular</h2>
+
+    <div ng-controller="todosCtrl">
+
+      <form ng-submit="addTask(newTask)">
+        <h4>Add a new todo</h4>
+        <input type="text" ng-model="newTask">
+        <button type="submit">Add Task</button>
+      </form>
+
+      <ul>
+        <li ng-repeat="todo in todos">
+          <input type="checkbox" ng-checked="todo.isComplete">{{todo.text}}
+        </li>
+      </ul>
+
+    </div>
+
   </div>
 
-  <!-- Data common to both versions -->
-  <script>
-  var todos = [
-    { id: 1,
-      text: "Create a React todo list",
-      complete: false
-    },
-    { id: 2,
-      text: "Create an Angular todo list",
-      complete: false
-    },
-    { id: 3,
-      text: "Show Daniel how unit testing works",
-      complete: false
-    }
-  ];
-  </script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
 
 </body>
 </html>
