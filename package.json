@@ -1,12 +1,29 @@
 {
-  "private": true,
+  "name": "react-backbone-todo",
+  "version": "0.0.1",
+  "description": "Todo-MVC with react-backbone",
+  "main": "js/app.jsx",
   "dependencies": {
     "backbone": "^1.1.2",
-    "backbone.localstorage": "^1.1.7",
     "jquery": "^2.1.0",
+    "underscore": "^1.6.0",
     "react": "^0.12.0",
-    "todomvc-app-css": "^1.0.0",
-    "todomvc-common": "^1.0.1",
-    "underscore": "^1.6.0"
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.2.0",
+    "envify": "~3.0.0",
+    "reactify": "^0.15",
+    "watchify": "~2.1.0"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
   }
 }
