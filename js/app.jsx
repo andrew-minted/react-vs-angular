@@ -1,4 +1,4 @@
-var React = require('react');
+var React = window.React = require('react');
 
 var ExampleModel = require('./models/ExampleModel.js');
 var DisplayView = require('./components/DisplayView.component.jsx');
