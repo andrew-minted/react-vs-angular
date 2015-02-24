@@ -1,24 +1,31 @@
 {
   "name": "react-backbone-todo",
   "version": "0.0.1",
-  "description": "Todo-MVC with react-backbone",
+  "description": "React-Backbone Example",
   "main": "js/app.jsx",
   "dependencies": {
     "backbone": "^1.1.2",
     "jquery": "^2.1.0",
-    "underscore": "^1.6.0",
-    "react": "^0.12.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "react": "^0.12.0"
   },
   "devDependencies": {
     "browserify": "~6.2.0",
+    "chai": "^2.1.0",
     "envify": "~3.0.0",
+    "es6ify": "^1.6.0",
+    "jsdom": "^4.0.0",
+    "mocha": "^2.1.0",
+    "mochify": "^2.4.0",
+    "mochify-istanbul": "^2.1.1",
     "reactify": "^0.15",
     "watchify": "~2.1.0"
   },
   "scripts": {
     "start": "watchify -o js/bundle.js -v -d .",
-    "build": "browserify . | uglifyjs -cm > js/bundle.min.js"
+    "build": "browserify . | uglifyjs -cm > js/bundle.min.js",
+    "test": "mochify --reporter spec --node --transform [ reactify ] --transform [ es6ify ] ./**/*.tests.{js,jsx}",
+    "test-coverage": "mochify --reporter spec --node --transform [ reactify ] --transform [ es6ify ] --plugin [ mochify-istanbul --exclude '**/+(node_modules)/**/*' --exclude '**/*.tests.{js,jsx}' --report text  --report html --dir ./coverage ] ./**/*.tests.{js,jsx}"
   },
   "browserify": {
     "transform": [
