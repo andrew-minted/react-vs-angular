@@ -10,15 +10,20 @@
 
 ## Running App
 
-``` npm run start ```
+``` 
+# This will launch a watchify process that will rebuild js/bundle.js on every file save to a .js or .jsx file.
+npm run start 
+```
+
 
 from a new terminal process at the same project directory:
 ``` open index.html ```
 
 
 ## Running Tests
-
-``` npm run test ```
+``` 
+npm run test 
+```
 
 
 ## Backlog
@@ -26,3 +31,4 @@ from a new terminal process at the same project directory:
 - Use Sinon for more elegant Backbone model stubs
 - Get React Chrome Dev Tools Working
 - Enable code coverage (mochify-istanbul) for jsx
+- hook up mochify to selenium web driver
