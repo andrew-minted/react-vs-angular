@@ -31,7 +31,8 @@
   "browserify": {
     "transform": [
       "reactify",
-      "envify"
+      "envify",
+      "es6ify"
     ]
   }
 }
