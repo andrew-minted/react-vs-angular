@@ -7,7 +7,7 @@ var ToggleView = React.createClass({
   render: function() {
     return (
       <button onClick={this.handleClick}>
-        model.trigger('setName', {this.props.name});
+        Change Name to {this.props.name}
       </button>
     );
   }
