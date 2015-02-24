@@ -19,6 +19,7 @@
     "mochify": "^2.4.0",
     "mochify-istanbul": "^2.1.1",
     "reactify": "^0.15",
+    "sinon": "^1.12.2",
     "watchify": "~2.1.0"
   },
   "scripts": {
