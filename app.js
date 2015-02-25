@@ -14,7 +14,7 @@
     $scope.todos = [
       { text: 'Create a React todo list', isComplete: false },
       { text: 'Create an Angular todo list', isComplete: false },
-      { text: 'Show Daniel how unit testing works', isComplete: false },
+      { text: 'Demo how unit testing in angular works', isComplete: false },
     ]
   }]);
 
