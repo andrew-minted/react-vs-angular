@@ -12,9 +12,9 @@ var ExampleApp = React.createClass({
     return (
       <div>
         <DisplayView model={model} />
-        <ToggleView model={model} name="Kia" />
+        <ToggleView model={model} name="Bob" />
         <br />
-        <ToggleView model={model} name="Andrew" />
+        <ToggleView model={model} name="Joe" />
       </div>
     );
   }
